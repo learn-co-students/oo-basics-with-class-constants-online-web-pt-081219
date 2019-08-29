@@ -1,3 +1,4 @@
+require "pry"
 describe 'Shoe' do 
   describe 'BRANDS' do
     # Think about it! When does the BRANDS constant need to be
@@ -20,7 +21,6 @@ describe 'Shoe' do
       brands.each do |brand|
         Shoe.new(brand)
       end
-
       expect(Shoe::BRANDS.size).to eq(3)
     end
   end
