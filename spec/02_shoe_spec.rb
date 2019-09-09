@@ -20,7 +20,6 @@ describe 'Shoe' do
       brands.each do |brand|
         Shoe.new(brand)
       end
-
       expect(Shoe::BRANDS.size).to eq(3)
     end
   end
